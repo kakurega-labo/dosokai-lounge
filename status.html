@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f6b64">
+  <title>状況判断 | 同窓会喫茶2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.PNG">
+  <meta property="og:image" content="image/ogp2026.PNG">
+  <meta property="og:title" content="状況判断 | 同窓会ラウンジ2026">
+  <meta property="og:description" content="文化祭のとっておきスポット！気軽に立ち寄れる“同窓会喫茶”、今年もオープン。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dosokai-kissa.pages.dev/status.html">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="image/cafe-logo.PNG" alt="ロゴ" class="logoimg">
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="disclaimer-card">
+        <h2>状況判断</h2>
+        
+        <p>同窓会喫茶では、会場内でお過ごしいただく皆様に快適な空間を提供できるよう、目安となる混雑状況をご案内しています。</p>
+
+        <div class="disclaimer-section-title">座席数と混雑度の判断目安</div>
+        <p>お座席は、例年<strong>30席前後</strong>ご用意しています。混雑度の表示目安は以下の通りです。</p>
+
+        <div class="status-table-wrapper">
+          <table class="status-table">
+            <thead>
+              <tr>
+                <th>混雑度</th>
+                <th>使用席数</th>
+                <th>稼働率</th>
+                <th>状態の目安</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="status-badge status-green">混雑なし</span></td>
+                <td>12席以下</td>
+                <td>0%～40%</td>
+                <td>空席が多く、席を選んで自由に座れる状態</td>
+              </tr>
+              <tr>
+                <td><span class="status-badge status-yellow">やや混雑</span></td>
+                <td>13席～22席</td>
+                <td>40%～75%</td>
+                <td>テーブルが埋まり始め、席の選択肢が限られてくる状態</td>
+              </tr>
+              <tr>
+                <td><span class="status-badge status-red">大変混雑</span></td>
+                <td>23席～30席</td>
+                <td>75%～100%</td>
+                <td>グループ利用の案内が難しく、待ちが発生しやすい状態</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="disclaimer-section-title">稼働率の考慮について</div>
+        <p>4人掛けテーブルに3人で着席されるケースなどがあるため、実際の席数ベースで100%埋まらない場合でも、23席(約75%)を超えた段階で実質的に空席を見つけることが困難になります。そのため当サイトでは、稼働率75%以上を「大変混雑」としています。</p>
+
+        <div class="back-home-btn-wrapper">
+          <a href="index.html" class="back-home-btn">トップページへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="image/cafe-logo2.PNG" alt="ロゴ" class="footer-logo">
+      </div>
+      <div class="footer-info">
+        <p class="footer-heading">催事概要</p>
+        <ul>
+          <li>開催地:本館3階319教室</li>
+          <li>開催日:2026年9月19日～20日</li>
+          <li>時間帯:本館3階319教室</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">関連項目</p>
+        <ul>
+          <li><a href="status.html">状況判断</a></li>
+          <li><a href="donate.html">維持会費</a></li>
+          <li><a href="disclaimer.html">免責事項</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 同窓会喫茶2026</p>
+    </div>
+  </footer>
+
+  <div class="hamburger-wrapper">
+    <button id="hamburgerBtn" aria-label="メニュー">
+      <img src="image/Menu.svg" alt="メニューを開く" class="hamburger-icon">
+    </button>
+    <nav id="hamburgerMenu" class="hamburger-menu">
+      <p class="hamburger-title">ようこそ</p>
+      <button class="close-menu-btn" aria-label="閉じる">
+        <img src="image/Close.svg" alt="閉じる" class="close-icon">
+      </button>
+      <button onclick="location.href='index.html#statusWrapper'">現在の状況</button>
+      <button onclick="location.href='index.html#menu'">ドリンクメニュー</button>
+      <button onclick="location.href='index.html#info'">概要</button>
+      <hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid #999;">
+      <button onclick="openFestivalModal()">模擬店一覧</button>
+    </nav>
+  </div>
+
+  <button id="toTopBtn" title="トップへ戻る">↑</button>
+  <script src="js/script.js"></script>
+  <script src="js/festivalData2026.js"></script>
+  <script src="js/festivalModal.js"></script>
+  <script src="js/stallCalc.js"></script>
+</body>
+</html>

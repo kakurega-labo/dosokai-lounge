@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f6b64">
+  <title>維持会費 | 同窓会喫茶2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.PNG">
+  <meta property="og:image" content="image/ogp2026.PNG">
+  <meta property="og:title" content="維持会費 | 同窓会喫茶2026">
+  <meta property="og:description" content="文化祭のとっておきスポット！気軽に立ち寄れる“同窓会喫茶”、今年もオープン。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dosokai-kissa.pages.dev/donate.html">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="image/cafe-logo.PNG" alt="ロゴ" class="logoimg">
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="disclaimer-card">
+        <h2>維持会費</h2>
+        
+        <p>同窓会喫茶での各種サービスは無料でお楽しみいただけますが、本喫茶の運営は同窓生による維持会費によって成り立っています。</p>
+        
+        <p>今後の喫茶運営維持のため、皆様の温かいご協力とご理解をいただけますようお願いいたします。</p>
+
+        
+        <div class="disclaimer-section-title">維持会費受付場所について</div>
+        <div class="donate-pop-wrapper">
+          <p class="donate-pop-lead"><p>受付は同窓会喫茶を入ってすぐの正面にございます。また、目印として以下のポップを掲示しています。</p>
+          <img src="image/donate-pop.jpg" alt="維持会費受付ポップ" class="donate-pop-img">
+        </div>
+
+        <div class="back-home-btn-wrapper">
+          <a href="index.html" class="back-home-btn">トップページへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="image/cafe-logo.PNG" alt="ロゴ" class="footer-logo">
+      </div>
+      <div class="footer-info">
+        <p class="footer-heading">催事概要</p>
+        <ul>
+          <li>開催地:本館3階319教室</li>
+          <li>開催日:2026年9月19日～20日</li>
+          <li>時間帯:本館3階319教室</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">関連項目</p>
+        <ul>
+          <li><a href="status.html">状況判断</a></li>
+          <li><a href="donate.html">維持会費</a></li>
+          <li><a href="disclaimer.html">免責事項</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 同窓会喫茶2026</p>
+    </div>
+  </footer>
+
+  <div class="hamburger-wrapper">
+    <button id="hamburgerBtn" aria-label="メニュー">
+      <img src="image/Menu.svg" alt="メニューを開く" class="hamburger-icon">
+    </button>
+    <nav id="hamburgerMenu" class="hamburger-menu">
+      <p class="hamburger-title">ようこそ</p>
+      <button class="close-menu-btn" aria-label="閉じる">
+        <img src="image/Close.svg" alt="閉じる" class="close-icon">
+      </button>
+      <button onclick="location.href='index.html#statusWrapper'">現在の状況</button>
+      <button onclick="location.href='index.html#menu'">ドリンクメニュー</button>
+      <button onclick="location.href='index.html#info'">概要</button>
+      <hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid #999;">
+      <button onclick="openFestivalModal()">模擬店一覧</button>
+    </nav>
+  </div>
+
+  <button id="toTopBtn" title="トップへ戻る">↑</button>
+  <script src="js/script.js"></script>
+  <script src="js/festivalData2026.js"></script>
+  <script src="js/festivalModal.js"></script>
+  <script src="js/stallCalc.js"></script>
+</body>
+</html>

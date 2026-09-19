@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f6b64">
+  <title>同窓会喫茶2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.PNG">
+  <meta property="og:image" content="image/ogp2026.PNG">
+  <meta property="og:title" content="同窓会喫茶2026">
+  <meta property="og:description" content="文化祭のとっておきスポット！気軽に立ち寄れる“同窓会喫茶”、今年もオープン。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dosokai-kissa.pages.dev">
+</head>
+<body>
+  <header>
+   <div class="logo-container">
+    <img src="image/cafe-logo.PNG" alt="ロゴ" class="logoimg">
+    </div>
+  </header>
+
+  <section class="gallery">
+    <div class="slider">
+      <div class="slides">
+        <img src="image/cafe1.jpg" alt="室内の様子1">
+        <img src="image/cafe2.jpg" alt="室内の様子2">
+        <img src="image/cafe3.jpg" alt="ドリンク一例">
+      </div>
+      <div class="indicators">
+        <span class="dot active" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+      </div>
+      <p class="gallery-note">※画像はイメージです。実際のドリンクは紙コップまたはプラカップで提供されます。</p>
+    </div>
+  </section>
+
+  <section class="status" id="statusWrapper">
+  <h3>現在の状況</h3>
+  <div class="status-box">
+    <div id="status-display">読み込み中...</div>
+    <p id="openNowMessage" class="open-now-text"></p>
+  </div>
+  <p class="status-note">※タイミングにより実際と異なる場合があります。</p>
+  </section>
+  
+  <section class="menu" id="menu">
+    <h3>ドリンクメニュー</h3>
+    <ul>
+      <li>コーヒー</li>
+      <li>アイスコーヒー</li>
+      <li>紅茶(HOT)</li>
+      <li>アイスティー</li>
+      <li>ペプシ</li>
+      <li>レモネード</li>
+      <li>りんご</li>
+    </ul>
+  </section>
+
+  <section class="bottom-info-section" id="info">
+    <div class="info-compact-card">
+      <div class="compact-row">
+        <span class="compact-label">開催地</span>
+        <span class="compact-value">本館3階319教室</span>
+      </div>
+
+      <div class="compact-row">
+        <span class="compact-label">開催日</span>
+        <span class="compact-date">2026年9月19日～20日</span>
+      </div>
+
+      <div class="compact-row">
+        <span class="compact-label">時間帯</span>
+        <span class="compact-date">9時～16時</span>
+      </div>
+
+      <div class="compact-row">
+        <p class="compact-intro">同窓会喫茶とは</p>
+        <p class="intro-text">卒業生の皆さんがゆったりと交流できる空間です。飲み物やお菓子をご用意してお待ちしています。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="image/cafe-logo.PNG" alt="ロゴ" class="footer-logo">
+      </div>
+      <div class="footer-info">
+        <p class="footer-heading">催事概要</p>
+        <ul>
+          <li>開催地:本館3階319教室</li>
+          <li>開催日:2026年9月19日～20日</li>
+          <li>時間帯:本館3階319教室</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">関連項目</p>
+        <ul>
+          <li><a href="status.html">状況判断</a></li>
+          <li><a href="donate.html">維持会費</a></li>
+          <li><a href="disclaimer.html">免責事項</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 同窓会喫茶</p>
+    </div>
+  </footer>
+
+<div class="hamburger-wrapper">
+  <button id="hamburgerBtn" aria-label="メニュー">
+    <img src="image/Menu.svg" alt="メニューを開く" class="hamburger-icon">
+  </button>
+  <nav id="hamburgerMenu" class="hamburger-menu">
+  <p class="hamburger-title">ようこそ</p>
+  <button class="close-menu-btn" aria-label="閉じる">
+    <img src="image/Close.svg" alt="閉じる" class="close-icon">
+  </button>
+    <button onclick="scrollToSection('statusWrapper')">現在の状況</button>
+    <button onclick="scrollToSection('menu')">ドリンクメニュー</button>
+    <button onclick="scrollToSection('info')">概要</button>
+    <hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid #999;">
+    <button onclick="openFestivalModal()">模擬店一覧</button>
+  </nav>
+</div>
+  <button id="toTopBtn" title="トップへ戻る">↑</button>
+  <script src="js/script.js"></script>
+  <script src="js/festivalData2026.js"></script>
+  <script src="js/festivalModal.js"></script>
+  <script src="js/stallCalc.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/statusColor.js"></script>
+</body>
+</html>
